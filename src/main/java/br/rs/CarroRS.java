@@ -2,6 +2,7 @@ package br.rs;
 
 import java.util.List;
 import java.util.UUID;
+import java.util.logging.Logger;
 
 import javax.inject.Inject;
 import javax.json.Json;
@@ -21,10 +22,16 @@ import br.entity.Carro;
 public class CarroRS {
 
 	@Inject
+	// @Any
+	// @BatchProperty
+	Logger logger;
+
+	@Inject
 	CarroBC carroBC;
 
 	@GET
 	public List<Carro> listarCarro() {
+		logger.info("listarCarro");
 		return carroBC.listarCarro();
 	}
 
