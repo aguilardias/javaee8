@@ -3,6 +3,7 @@ package br.bc;
 import java.util.Arrays;
 import java.util.List;
 import java.util.UUID;
+import java.util.logging.Logger;
 
 import javax.ejb.Stateless;
 
@@ -10,6 +11,8 @@ import br.entity.Carro;
 
 @Stateless
 public class CarroBC {
+
+	private static final Logger LOGGER = Logger.getLogger(CarroBC.class.getName());
 
 	public CarroBC() {
 		super();

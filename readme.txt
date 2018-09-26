@@ -1,5 +1,7 @@
 mvn archetype:generate -Dfilter=com.airhacks:
 
+https://www.packtpub.com/mapt/video/video/9781788831130
+
 section 1: core java ee components
 utilizar @Stateless em BC e @Inject para injetar dependências
 
@@ -50,6 +52,9 @@ section 3: persistence
 
 ###
 section 4: cross-cutting concerns
+@Interceptors, @Interceptor, @AroundInvoke
+
+jcache
 
 ###
 section 5: asynchronous behavior
