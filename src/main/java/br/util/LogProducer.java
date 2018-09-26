@@ -7,10 +7,6 @@ import javax.enterprise.inject.spi.InjectionPoint;
 
 public class LogProducer {
 
-	/**
-	 * @param ip
-	 * @return
-	 */
 	@Produces
 	public Logger producer(InjectionPoint ip) {
 		return Logger.getLogger(ip.getMember().getDeclaringClass().getName());
