@@ -1,4 +1,4 @@
-package br.gov.serpro.reuse.resources.exception.mapper;
+package br.util;
 
 import java.io.IOException;
 
@@ -10,19 +10,17 @@ import javax.ws.rs.ext.Provider;
 @Provider
 public class CorsFilter implements ContainerResponseFilter {
 
-    @Override
-    public void filter(ContainerRequestContext requestContext,
-            ContainerResponseContext responseContext) throws IOException {
-        responseContext.getHeaders().add("Access-Control-Allow-Origin", "*");
-        responseContext.getHeaders().add("Access-Control-Allow-Credentials", "true");
-        responseContext.getHeaders().add("Access-Control-Allow-Headers",
-                "origin, content-type, accept, authorization");
-        responseContext.getHeaders().add("Access-Control-Allow-Methods",
-                "GET, POST, PUT, DELETE, OPTIONS, HEAD");
+	@Override
+	public void filter(ContainerRequestContext requestContext, ContainerResponseContext responseContext)
+			throws IOException {
+		responseContext.getHeaders().add("Access-Control-Allow-Origin", "*");
+		responseContext.getHeaders().add("Access-Control-Allow-Credentials", "true");
+		responseContext.getHeaders().add("Access-Control-Allow-Headers", "origin, content-type, accept, authorization");
+		responseContext.getHeaders().add("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS, HEAD");
 
-        if (requestContext.getMethod().equals("OPTIONS")) {
-            responseContext.setStatus(200);
-        }
-    }
+		if (requestContext.getMethod().equals("OPTIONS")) {
+			responseContext.setStatus(200);
+		}
+	}
 
 }
