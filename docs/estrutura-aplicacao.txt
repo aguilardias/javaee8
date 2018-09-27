@@ -1,0 +1,15 @@
+
+pom
+-javaee 8
+-junit 4
+
+especificações:
+-bean validation
+-jpa
+-ejb
+
+-security
+https://www.ibm.com/developerworks/library/j-javaee8-security-api-3/index.html
+https://medium.com/@swhp/playing-with-java-ee-security-jsr-375-soteria-38e8d2b094d4
+
+-cors

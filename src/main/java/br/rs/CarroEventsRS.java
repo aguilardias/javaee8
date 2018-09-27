@@ -40,7 +40,7 @@ public class CarroEventsRS {
 
 	@Schedule(hour = "*", minute = "*", second = "*/5")
 	public void enviarEvento() {
-		broadcaster.broadcast(criarEvento());
+		// broadcaster.broadcast(criarEvento());
 	}
 
 	private OutboundSseEvent criarEvento() {
