@@ -1,0 +1,12 @@
+ https://medium.com/@swhp/secure-javaee-rest-api-with-soteria-and-json-web-token-a6587c99924e
+	https://github.com/swhp/javaee-soteria-jwt
+	Nimbus JOSE + JWT dependency that responsible in generate and validate a JWT
+
+https://www.ibm.com/developerworks/library/j-javaee8-security-api-3/index.html
+https://medium.com/@swhp/playing-with-java-ee-security-jsr-375-soteria-38e8d2b094d4
+https://antoniogoncalves.org/2016/10/03/securing-jax-rs-endpoints-with-jwt/
+
+https://www.udemy.com/java-ee-8-tutorials-restful-web-services-with-jax-rs-21-for-java-devs/ 
+ 
+@Inject
+private SecurityContext securityContext;
