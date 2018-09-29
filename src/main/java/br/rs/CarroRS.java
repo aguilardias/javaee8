@@ -13,8 +13,6 @@ import javax.json.JsonArray;
 import javax.json.JsonObject;
 import javax.json.stream.JsonCollectors;
 import javax.security.enterprise.SecurityContext;
-import javax.servlet.annotation.HttpConstraint;
-import javax.servlet.annotation.ServletSecurity;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
@@ -41,8 +39,10 @@ public class CarroRS {
 	@Resource
 	ManagedExecutorService service;
 
+	// @RolesAllowed(value = "a")
 	@GET
-	@HttpConstraint(rolesAllowed = { "ADMaIN" }, transportGuarantee = ServletSecurity.TransportGuarantee.CONFIDENTIAL)
+	// @HttpConstraint(rolesAllowed = { "ADMaIN" }, transportGuarantee =
+	// ServletSecurity.TransportGuarantee.CONFIDENTIAL)
 	public List<Carro> listarCarro() {
 		return carroBC.listarCarro();
 	}

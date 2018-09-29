@@ -8,5 +8,5 @@ especificações:
 -jpa
 -ejb
 
--security
 -cors
+-security
