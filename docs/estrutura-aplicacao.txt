@@ -4,9 +4,9 @@ pom
 -junit 4
 
 especificações:
+-jax-rs/resteasy
 -bean validation
 -jpa
 -ejb
-
 -cors
--security
+-security,jwt

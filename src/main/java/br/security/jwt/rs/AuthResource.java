@@ -1,4 +1,4 @@
-package br.security.rs;
+package br.security.jwt.rs;
 
 import java.util.Arrays;
 
@@ -10,7 +10,7 @@ import javax.ws.rs.Path;
 import javax.ws.rs.core.HttpHeaders;
 import javax.ws.rs.core.Response;
 
-import br.security.JWTStore;
+import br.security.jwt.JWTStore;
 
 @Stateless
 @Path("tokens")

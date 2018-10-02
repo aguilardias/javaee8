@@ -1,4 +1,4 @@
- https://medium.com/@swhp/secure-javaee-rest-api-with-soteria-and-json-web-token-a6587c99924e
+https://medium.com/@swhp/secure-javaee-rest-api-with-soteria-and-json-web-token-a6587c99924e
 	https://github.com/swhp/javaee-soteria-jwt
 	Nimbus JOSE + JWT dependency that responsible in generate and validate a JWT
 	bower install angular-jwt --save
@@ -9,5 +9,13 @@ https://antoniogoncalves.org/2016/10/03/securing-jax-rs-endpoints-with-jwt/
 
 https://www.udemy.com/java-ee-8-tutorials-restful-web-services-with-jax-rs-21-for-java-devs/ 
  
+There are a few Java libraries to issue and validate JWT tokens such as:
+	jjwt
+    java-jwt https://github.com/auth0/java-jwt
+    jose4j (serpro)
+    nimbus-jose
+
+ 
 @Inject
 private SecurityContext securityContext;
+

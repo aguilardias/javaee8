@@ -1,4 +1,4 @@
-package br.security;
+package br.security.jwt;
 
 import java.io.Serializable;
 import java.util.Collections;

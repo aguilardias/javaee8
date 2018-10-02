@@ -1,4 +1,4 @@
-package br.security;
+package br.security.jwt;
 
 import java.text.ParseException;
 import java.time.Instant;
@@ -24,7 +24,7 @@ import com.nimbusds.jose.crypto.MACVerifier;
 import com.nimbusds.jwt.JWTClaimsSet;
 import com.nimbusds.jwt.SignedJWT;
 
-import br.security.control.KeyGenerator;
+import br.security.jwt.control.KeyGenerator;
 import net.minidev.json.JSONArray;
 import net.minidev.json.JSONObject;
 

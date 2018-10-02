@@ -5,29 +5,29 @@
          version="3.1">
 
     <!-- Session configuration -->
-    <session-config>
+    <!-- <session-config>
         <cookie-config>
-            <http-only>true</http-only> <!-- Prevent client side scripting from accessing/manipulating session cookie. -->
+            <http-only>true</http-only> Prevent client side scripting from accessing/manipulating session cookie.
         </cookie-config>
-        <tracking-mode>COOKIE</tracking-mode> <!-- This disables URL rewriting. -->
-    </session-config>
+        <tracking-mode>COOKIE</tracking-mode> This disables URL rewriting.
+    </session-config> -->
 
-    <security-constraint>
+    <!-- <security-constraint>
         <web-resource-collection>
             <web-resource-name>Authorize user pages</web-resource-name>
             <url-pattern>/api/tokens/*</url-pattern>
         </web-resource-collection>
-        <!-- OMIT auth-constraint -->
-    </security-constraint>
+        OMIT auth-constraint
+    </security-constraint> -->
 
-    <security-constraint>
+    <!-- <security-constraint>
         <web-resource-collection>
             <web-resource-name>Admin pages</web-resource-name>
-            <url-pattern>/api/private/*</url-pattern>
+            <url-pattern>/api/carro/privado</url-pattern>
         </web-resource-collection>
         <auth-constraint>
             <role-name>member</role-name>
         </auth-constraint>
-    </security-constraint>
+    </security-constraint> -->
     
 </web-app>

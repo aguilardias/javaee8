@@ -1,4 +1,4 @@
-package br.security.control;
+package br.security.jwt.control;
 
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;

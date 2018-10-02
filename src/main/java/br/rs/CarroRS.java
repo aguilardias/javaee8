@@ -34,7 +34,7 @@ public class CarroRS {
 	@Inject
 	CarroBC carroBC;
 
-	SecurityContext a;
+	SecurityContext securityContext;
 
 	@Resource
 	ManagedExecutorService service;
@@ -58,6 +58,14 @@ public class CarroRS {
 	@Path("objeto")
 	public JsonObject objeto() {
 		return Json.createObjectBuilder().add("nome", UUID.randomUUID().toString()).build();
+	}
+
+	@GET
+	@Path("privado")
+	public List<Carro> listarCarroPrivado() {
+		boolean hasAccess = securityContext.hasAccessToWebResource("/secretServlet", "GET");
+		System.out.println(hasAccess);
+		return carroBC.listarCarro();
 	}
 
 }
